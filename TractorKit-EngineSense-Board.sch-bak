@@ -563,55 +563,44 @@ Wire Notes Line
 $Comp
 L Device:R R?
 U 1 1 5F22961E
-P 2050 4900
+P 2450 4900
 AR Path="/5F193498/5F22961E" Ref="R?"  Part="1" 
 AR Path="/5F22961E" Ref="R?"  Part="1" 
-F 0 "R?" V 1950 4900 50  0000 C CNN
-F 1 "10k" V 1850 4900 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1980 4900 50  0001 C CNN
-F 3 "~" H 2050 4900 50  0001 C CNN
-	1    2050 4900
+F 0 "R?" V 2350 4900 50  0000 C CNN
+F 1 "10k" V 2250 4900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2380 4900 50  0001 C CNN
+F 3 "~" H 2450 4900 50  0001 C CNN
+	1    2450 4900
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5F229624
-P 2550 4900
-F 0 "R?" V 2450 4900 50  0000 C CNN
-F 1 "1k" V 2350 4900 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2480 4900 50  0001 C CNN
-F 3 "~" H 2550 4900 50  0001 C CNN
-	1    2550 4900
+P 2950 4900
+F 0 "R?" V 2850 4900 50  0000 C CNN
+F 1 "1k" V 2750 4900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2880 4900 50  0001 C CNN
+F 3 "~" H 2950 4900 50  0001 C CNN
+	1    2950 4900
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1900 4900 1700 4900
-Wire Wire Line
-	1700 4900 1700 4800
-Wire Wire Line
-	1700 4800 1450 4800
-Wire Wire Line
-	2200 4900 2300 4900
+	2300 4900 2100 4900
 $Comp
 L power:GND #PWR?
 U 1 1 5F22962E
-P 2800 5000
-F 0 "#PWR?" H 2800 4750 50  0001 C CNN
-F 1 "GND" H 2805 4827 50  0000 C CNN
-F 2 "" H 2800 5000 50  0001 C CNN
-F 3 "" H 2800 5000 50  0001 C CNN
-	1    2800 5000
+P 3200 5000
+F 0 "#PWR?" H 3200 4750 50  0001 C CNN
+F 1 "GND" H 3205 4827 50  0000 C CNN
+F 2 "" H 3200 5000 50  0001 C CNN
+F 3 "" H 3200 5000 50  0001 C CNN
+	1    3200 5000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 5000 2800 4900
+	3200 5000 3200 4900
 Wire Wire Line
-	2800 4900 2700 4900
-Wire Wire Line
-	2300 4900 2300 5350
-Connection ~ 2300 4900
-Wire Wire Line
-	2300 4900 2400 4900
+	3200 4900 3100 4900
 Wire Wire Line
 	2300 3700 2300 3600
 Wire Wire Line
@@ -628,8 +617,6 @@ Wire Wire Line
 	7550 5200 7900 5200
 Text Label 1100 3600 0    50   ~ 0
 AN_CURR
-Text Label 2300 5350 1    50   ~ 0
-AN_VOLT
 $Comp
 L Device:R R?
 U 1 1 5F229684
@@ -740,6 +727,84 @@ Text Label 7550 4400 0    50   ~ 0
 SDA
 Text Label 7550 4500 0    50   ~ 0
 SCL
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 5F18CE4D
+P 4550 3850
+AR Path="/5F193498/5F18CE4D" Ref="J?"  Part="1" 
+AR Path="/5F18CE4D" Ref="J?"  Part="1" 
+F 0 "J?" H 4468 4167 50  0000 C CNN
+F 1 "ADC1" H 4468 4076 50  0000 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type011_RT05503HBWC_1x03_P5.00mm_Horizontal" H 4550 3850 50  0001 C CNN
+F 3 "~" H 4550 3850 50  0001 C CNN
+	1    4550 3850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 5F1A3E6D
+P 4550 4350
+AR Path="/5F193498/5F1A3E6D" Ref="J?"  Part="1" 
+AR Path="/5F1A3E6D" Ref="J?"  Part="1" 
+F 0 "J?" H 4468 4667 50  0000 C CNN
+F 1 "ADC2" H 4468 4576 50  0000 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type011_RT05503HBWC_1x03_P5.00mm_Horizontal" H 4550 4350 50  0001 C CNN
+F 3 "~" H 4550 4350 50  0001 C CNN
+	1    4550 4350
+	-1   0    0    -1  
+$EndComp
+Connection ~ 2700 4900
+Wire Wire Line
+	2700 4900 2800 4900
+Wire Wire Line
+	2600 4900 2700 4900
+Text Label 2700 5350 1    50   ~ 0
+AN_VOLT
+Wire Wire Line
+	2700 4900 2700 5350
+Wire Wire Line
+	2100 4900 2100 4700
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F1BB53A
+P 1650 4800
+F 0 "#PWR?" H 1650 4650 50  0001 C CNN
+F 1 "+3V3" H 1665 4973 50  0000 C CNN
+F 2 "" H 1650 4800 50  0001 C CNN
+F 3 "" H 1650 4800 50  0001 C CNN
+	1    1650 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 4800 1450 4800
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 5F1BDF79
+P 4550 4850
+AR Path="/5F193498/5F1BDF79" Ref="J?"  Part="1" 
+AR Path="/5F1BDF79" Ref="J?"  Part="1" 
+F 0 "J?" H 4468 5167 50  0000 C CNN
+F 1 "UART" H 4468 5076 50  0000 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type011_RT05503HBWC_1x03_P5.00mm_Horizontal" H 4550 4850 50  0001 C CNN
+F 3 "~" H 4550 4850 50  0001 C CNN
+	1    4550 4850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F1BE3A9
+P 4850 5050
+F 0 "#PWR?" H 4850 4800 50  0001 C CNN
+F 1 "GND" H 4855 4877 50  0000 C CNN
+F 2 "" H 4850 5050 50  0001 C CNN
+F 3 "" H 4850 5050 50  0001 C CNN
+	1    4850 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4950 4850 4950
+Wire Wire Line
+	4850 4950 4850 5050
 Wire Bus Line
 	2600 6250 2600 6650
 Wire Bus Line
