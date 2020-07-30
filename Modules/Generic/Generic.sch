@@ -1,0 +1,240 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 5F23392F
+P 7100 3700
+F 0 "J1" H 7180 3692 50  0000 L CNN
+F 1 "Conn_01x06" H 7180 3601 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7100 3700 50  0001 C CNN
+F 3 "~" H 7100 3700 50  0001 C CNN
+	1    7100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Housing_Pad N1
+U 1 1 5F237D86
+P 6700 2350
+F 0 "N1" H 6878 2363 50  0000 L CNN
+F 1 "Housing_Pad" H 6878 2272 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 6775 2400 50  0001 C CNN
+F 3 "~" H 6775 2400 50  0001 C CNN
+	1    6700 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3600 6300 3600
+Wire Wire Line
+	6900 3700 6400 3700
+Wire Wire Line
+	6000 3800 6500 3800
+Wire Wire Line
+	6900 3900 6600 3900
+Wire Wire Line
+	6000 4000 6700 4000
+$Comp
+L Connector:Screw_Terminal_01x01 J2
+U 1 1 5F23D09C
+P 5800 3500
+F 0 "J2" H 5900 3500 50  0000 C CNN
+F 1 "A" H 6000 3500 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm" H 5800 3500 50  0001 C CNN
+F 3 "~" H 5800 3500 50  0001 C CNN
+	1    5800 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J3
+U 1 1 5F23D59A
+P 5800 3600
+F 0 "J3" H 5900 3600 50  0000 C CNN
+F 1 "B" H 6000 3600 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm" H 5800 3600 50  0001 C CNN
+F 3 "~" H 5800 3600 50  0001 C CNN
+	1    5800 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J4
+U 1 1 5F23D8C0
+P 5800 3700
+F 0 "J4" H 5900 3700 50  0000 C CNN
+F 1 "C" H 6000 3700 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm" H 5800 3700 50  0001 C CNN
+F 3 "~" H 5800 3700 50  0001 C CNN
+	1    5800 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J5
+U 1 1 5F23DB37
+P 5800 3800
+F 0 "J5" H 5900 3800 50  0000 C CNN
+F 1 "D" H 6000 3800 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm" H 5800 3800 50  0001 C CNN
+F 3 "~" H 5800 3800 50  0001 C CNN
+	1    5800 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J6
+U 1 1 5F23DDAE
+P 5800 3900
+F 0 "J6" H 5900 3900 50  0000 C CNN
+F 1 "E" H 6000 3900 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm" H 5800 3900 50  0001 C CNN
+F 3 "~" H 5800 3900 50  0001 C CNN
+	1    5800 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J7
+U 1 1 5F23DF44
+P 5800 4000
+F 0 "J7" H 5900 4000 50  0000 C CNN
+F 1 "F" H 6000 4000 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm" H 5800 4000 50  0001 C CNN
+F 3 "~" H 5800 4000 50  0001 C CNN
+	1    5800 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 3500 6200 3500
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 5F23F1AC
+P 6500 2850
+F 0 "JP4" H 6550 2950 50  0000 R CNN
+F 1 " " V 6455 2762 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6500 2850 50  0001 C CNN
+F 3 "~" H 6500 2850 50  0001 C CNN
+	1    6500 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP5
+U 1 1 5F240411
+P 6600 3150
+F 0 "JP5" H 6650 3250 50  0000 R CNN
+F 1 " " V 6555 3062 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6600 3150 50  0001 C CNN
+F 3 "~" H 6600 3150 50  0001 C CNN
+	1    6600 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP6
+U 1 1 5F2407F7
+P 6700 2850
+F 0 "JP6" H 6750 2950 50  0000 R CNN
+F 1 " " V 6655 2762 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6700 2850 50  0001 C CNN
+F 3 "~" H 6700 2850 50  0001 C CNN
+	1    6700 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5F240D8F
+P 6400 3150
+F 0 "JP3" H 6450 3250 50  0000 R CNN
+F 1 " " V 6355 3062 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6400 3150 50  0001 C CNN
+F 3 "~" H 6400 3150 50  0001 C CNN
+	1    6400 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5F2419D0
+P 6300 2850
+F 0 "JP2" H 6350 2950 50  0000 R CNN
+F 1 " " V 6255 2762 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6300 2850 50  0001 C CNN
+F 3 "~" H 6300 2850 50  0001 C CNN
+	1    6300 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5F241D78
+P 6200 3150
+F 0 "JP1" H 6250 3250 50  0000 R CNN
+F 1 " " V 6155 3062 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6200 3150 50  0001 C CNN
+F 3 "~" H 6200 3150 50  0001 C CNN
+	1    6200 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6500 2550 6500 2600
+Wire Wire Line
+	6500 2600 6400 2600
+Wire Wire Line
+	6200 2600 6200 3000
+Wire Wire Line
+	6300 2700 6300 2600
+Connection ~ 6300 2600
+Wire Wire Line
+	6300 2600 6200 2600
+Wire Wire Line
+	6400 3000 6400 2600
+Connection ~ 6400 2600
+Wire Wire Line
+	6400 2600 6300 2600
+Wire Wire Line
+	6500 2600 6500 2700
+Connection ~ 6500 2600
+Wire Wire Line
+	6600 3000 6600 2600
+Wire Wire Line
+	6600 2600 6500 2600
+Wire Wire Line
+	6600 2600 6700 2600
+Wire Wire Line
+	6700 2600 6700 2700
+Connection ~ 6600 2600
+Wire Wire Line
+	6200 3300 6200 3500
+Connection ~ 6200 3500
+Wire Wire Line
+	6200 3500 6900 3500
+Wire Wire Line
+	6300 3000 6300 3600
+Connection ~ 6300 3600
+Wire Wire Line
+	6300 3600 6900 3600
+Wire Wire Line
+	6400 3300 6400 3700
+Connection ~ 6400 3700
+Wire Wire Line
+	6400 3700 6000 3700
+Wire Wire Line
+	6500 3000 6500 3800
+Connection ~ 6500 3800
+Wire Wire Line
+	6500 3800 6900 3800
+Wire Wire Line
+	6600 3300 6600 3900
+Connection ~ 6600 3900
+Wire Wire Line
+	6600 3900 6000 3900
+Wire Wire Line
+	6700 3000 6700 4000
+Connection ~ 6700 4000
+Wire Wire Line
+	6700 4000 6900 4000
+$EndSCHEMATC
